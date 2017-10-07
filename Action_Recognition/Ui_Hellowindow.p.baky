@@ -1,0 +1,114 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Python27\PyQt\Hellowindow.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName(_fromUtf8("Dialog"))
+        Dialog.resize(433, 335)
+        Dialog.setSizeGripEnabled(True)
+        self.tabWidget = QtGui.QTabWidget(Dialog)
+        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 441, 341))
+        self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
+        self.tab = QtGui.QWidget()
+        self.tab.setObjectName(_fromUtf8("tab"))
+        self.pushButton_4 = QtGui.QPushButton(self.tab)
+        self.pushButton_4.setGeometry(QtCore.QRect(80, 130, 241, 28))
+        self.pushButton_4.setObjectName(_fromUtf8("pushButton_4"))
+        self.label = QtGui.QLabel(self.tab)
+        self.label.setGeometry(QtCore.QRect(30, 40, 271, 21))
+        self.label.setFrameShape(QtGui.QFrame.Box)
+        self.label.setFrameShadow(QtGui.QFrame.Plain)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.pushButton_3 = QtGui.QPushButton(self.tab)
+        self.pushButton_3.setGeometry(QtCore.QRect(130, 80, 131, 28))
+        self.pushButton_3.setObjectName(_fromUtf8("pushButton_3"))
+        self.pushButton_2 = QtGui.QPushButton(self.tab)
+        self.pushButton_2.setGeometry(QtCore.QRect(330, 270, 93, 28))
+        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
+        self.pushButton = QtGui.QPushButton(self.tab)
+        self.pushButton.setGeometry(QtCore.QRect(310, 35, 93, 31))
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.progressBar = QtGui.QProgressBar(self.tab)
+        self.progressBar.setGeometry(QtCore.QRect(40, 220, 341, 23))
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setObjectName(_fromUtf8("progressBar"))
+        self.label_3 = QtGui.QLabel(self.tab)
+        self.label_3.setGeometry(QtCore.QRect(30, 10, 331, 16))
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.pushButton_7 = QtGui.QPushButton(self.tab)
+        self.pushButton_7.setGeometry(QtCore.QRect(80, 174, 241, 28))
+        self.pushButton_7.setObjectName(_fromUtf8("pushButton_7"))
+        self.tabWidget.addTab(self.tab, _fromUtf8(""))
+        self.tab_2 = QtGui.QWidget()
+        self.tab_2.setObjectName(_fromUtf8("tab_2"))
+        self.label_2 = QtGui.QLabel(self.tab_2)
+        self.label_2.setGeometry(QtCore.QRect(30, 40, 271, 21))
+        self.label_2.setFrameShape(QtGui.QFrame.Box)
+        self.label_2.setFrameShadow(QtGui.QFrame.Plain)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.pushButton_5 = QtGui.QPushButton(self.tab_2)
+        self.pushButton_5.setGeometry(QtCore.QRect(310, 35, 93, 31))
+        self.pushButton_5.setObjectName(_fromUtf8("pushButton_5"))
+        self.pushButton_6 = QtGui.QPushButton(self.tab_2)
+        self.pushButton_6.setGeometry(QtCore.QRect(140, 220, 131, 28))
+        self.pushButton_6.setObjectName(_fromUtf8("pushButton_6"))
+        self.label_4 = QtGui.QLabel(self.tab_2)
+        self.label_4.setGeometry(QtCore.QRect(30, 10, 331, 16))
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.pushButton_8 = QtGui.QPushButton(self.tab_2)
+        self.pushButton_8.setGeometry(QtCore.QRect(330, 270, 93, 28))
+        self.pushButton_8.setObjectName(_fromUtf8("pushButton_8"))
+        self.tabWidget.addTab(self.tab_2, _fromUtf8(""))
+
+        self.retranslateUi(Dialog)
+        self.tabWidget.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        Dialog.setWindowTitle(_translate("Dialog", "ActionRecognition", None))
+        self.pushButton_4.setText(_translate("Dialog", "Classify with Single Frame", None))
+        self.label.setText(_translate("Dialog", "C:\\Python27", None))
+        self.pushButton_3.setText(_translate("Dialog", "Process Video", None))
+        self.pushButton_2.setText(_translate("Dialog", "Quit", None))
+        self.pushButton.setText(_translate("Dialog", "Open...", None))
+        self.label_3.setText(_translate("Dialog", "The path of video you want to classify:", None))
+        self.pushButton_7.setText(_translate("Dialog", "Classify with LSTM model", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Dialog", "Recognize", None))
+        self.label_2.setText(_translate("Dialog", "C:\\Python27", None))
+        self.pushButton_5.setText(_translate("Dialog", "Open...", None))
+        self.pushButton_6.setText(_translate("Dialog", "Start Train", None))
+        self.label_4.setText(_translate("Dialog", "The path of videos to train:", None))
+        self.pushButton_8.setText(_translate("Dialog", "Quit", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog", "Train", None))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtGui.QApplication(sys.argv)
+    Dialog = QtGui.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
+
